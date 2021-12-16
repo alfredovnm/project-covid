@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<title>Historial</title>
+</head>
+<body>
+
+	<!--Inicio de cabecera-->
+	<header id="header">
+	<div class="wrap">
+	<div class="mobile-menu">
+        <a id="barrasMenu">
+            <img src="img/barras.svg" alt="Icono Menu">
+        </a>
+    </div>
+	<nav id="menu">
+		<ul>
+			<li><a href="/index">Inicio</a></li>
+			<li><a href="/casos">Casos</a></li>
+			<li><a href="/historial">Historial</a></li>
+			<li><a href="/vacunas">Vacunas</a></li>
+		</ul>
+	</nav>
+	</div>
+	</header>
+	<!--Fin de la cabecera-->
+
+	<!-- inicio form consulta -->
+
+	<h1 class="fw-300 centrar-texto">Historial</h1>
+
+    <main class="contenedor seccion contenido-centrado">
+        <h2 class="fw-300 centrar-texto">Llena el formulario de Historial</h2>
+
+        <form class="contacto" action="">
+            <fieldset>
+                <legend>Información Solicitada</legend>
+                <div class="contenido-form">
+	                <label for="nombre">País:</label>
+	                <input type="text" id="PaisHisto" placeholder="Ingresa un País" required>
+	                <label for="estatus">Estatus:</label>
+	                <select id="estatusHisto">
+	                	<option value="deaths">Muertos</option>
+	                	<option value="Confirmed">Confirmados</option>
+	                </select>
+                </div>
+
+            </fieldset>
+    	</form>
+    	<button id="historial" class="button" >Consultar</button>
+    </main>
+
+    <br>
+	<!-- fin form consulta -->
+	<section id="resultadoHisto">
+
+	</section>
+
+	
+</body>
+<script type="text/javascript" src="../js/scripts.js"></script>
+</html>
